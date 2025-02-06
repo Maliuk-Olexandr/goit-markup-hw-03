@@ -8,6 +8,7 @@ body {
 ul,
 ol {
   list-style-type: none;
+  padding-left: 0;
 }
 
 a {
@@ -17,8 +18,24 @@ img {
   display: block;
   max-width: 100%;
 }
-h1,h2,h3,h4,h5,h6{
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
   margin: 0;
+}
+section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+.conteiner {
+  max-width: 1148px;
+  margin: 0px auto;
+  padding: 0 10px;
 }
 
 /* хедер меню */
@@ -37,21 +54,25 @@ h1,h2,h3,h4,h5,h6{
   color: #2e2f42;
 }
 .link-header {
+  display: block;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  padding: 24px 0;
 }
 
 .address-header {
   font-style: normal;
 }
 .link-address {
+  display: block;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
+  padding: 24px 0;
 }
 .link-header:hover,
 .link-header:focus,
@@ -74,6 +95,8 @@ h1,h2,h3,h4,h5,h6{
   color: #fff;
 }
 .business-button {
+  display: block;
+  border: 0;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -81,6 +104,10 @@ h1,h2,h3,h4,h5,h6{
   color: #fff;
   background-color: #4d5ae5;
   cursor: pointer;
+  border-radius: 4px;
+  padding: 16px 32px;
+  flex-basis: 56px;
+  height: 56px;
 }
 .business-button:hover,
 .business-button:focus {
@@ -95,6 +122,7 @@ h1,h2,h3,h4,h5,h6{
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  margin-bottom: 8px;
 }
 .base-text {
   font-size: 16px;
@@ -135,4 +163,40 @@ h1,h2,h3,h4,h5,h6{
 .logo-text-footer,
 .footer-text {
   color: #f4f4fd;
+}
+
+/* ---------align------------- */
+
+.header-menu .conteiner,
+.header-nav-links,
+.header-nav,
+.address-header-list {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  align-items: center;
+}
+.business .conteiner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+section.business {
+  padding: 188px 0;
+}
+.business-h-one {
+  margin-left: 306px;
+  margin-right: 306px;
+  margin-bottom: 48px;
+}
+section.advantages ul {
+  display: flex;
+  gap: 24px;
+}
+.advantages-item {
+  flex-basis: calc((100% - 72px) / 4);
+}
+section.team ul{
+   display: flex;
+  gap: 24px;
 }
