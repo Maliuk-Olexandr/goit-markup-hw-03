@@ -5,9 +5,20 @@ body {
   color: #434455;
   background-color: #fff;
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
 ul,
 ol {
   list-style-type: none;
+  margin: 0;
   padding-left: 0;
 }
 
@@ -16,31 +27,16 @@ a {
 }
 img {
   display: block;
-  max-width: 100%;
-}
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-ul {
-  margin: 0;
-}
-section {
-  padding-top: 120px;
-  padding-bottom: 120px;
-}
-.conteiner {
-  max-width: 1148px;
-  margin: 0px auto;
-  padding: 0 10px;
+  width: 100%;
 }
 
 /* хедер меню */
+.header-menu {
+  border-bottom: 1px solid #e7e9fc;
+}
 
 .logo {
+  display: block;
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 18px;
@@ -48,6 +44,7 @@ section {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #4d5ae5;
+  padding: 24px 0;
   margin-right: 76px;
 }
 .logo-text {
@@ -61,6 +58,7 @@ section {
   letter-spacing: 0.02em;
   color: #2e2f42;
   padding: 24px 0;
+  align-items: center;
 }
 
 .address-header {
@@ -73,6 +71,7 @@ section {
   letter-spacing: 0.02em;
   color: #434455;
   padding: 24px 0;
+  align-items: center;
 }
 .link-header:hover,
 .link-header:focus,
@@ -93,10 +92,12 @@ section {
   letter-spacing: 0.02em;
   text-align: center;
   color: #fff;
+  width: 496px;
+  margin: 0 auto;
+  margin-bottom: 48px;
 }
-.business-button {
+.order-button {
   display: block;
-  border: 0;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -104,13 +105,14 @@ section {
   color: #fff;
   background-color: #4d5ae5;
   cursor: pointer;
+  margin: 0 auto;
   border-radius: 4px;
+  border: 0;
   padding: 16px 32px;
-  flex-basis: 56px;
-  height: 56px;
+  overflow: hidden;
 }
-.business-button:hover,
-.business-button:focus {
+.order-button:hover,
+.order-button:focus {
   background-color: #404bbf;
 }
 
@@ -135,6 +137,7 @@ section {
   background-color: #f4f4fd;
 }
 .base-h-two {
+  display: block;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
@@ -142,13 +145,18 @@ section {
   text-align: center;
   text-transform: capitalize;
   color: #2e2f42;
+  margin-bottom: 72px;
 }
 .base-h-three {
+  display: block;
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  margin-top: 32px;
+  margin-bottom: 8px;
+  margin-left: 16px;
 }
 .team-card {
   background-color: #fff;
@@ -160,43 +168,75 @@ section {
 .footer {
   background-color: #2e2f42;
 }
-.logo-text-footer,
-.footer-text {
+.logo-text-footer {
   color: #f4f4fd;
 }
-
-/* ---------align------------- */
-
-.header-menu .conteiner,
+.footer-text {
+  color: #f4f4fd;
+  width: 264px;
+}
+/* -----------align---------------- */
+.section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+.conteiner {
+  width: 1158px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+.address-header ul,
 .header-nav-links,
-.header-nav,
-.address-header-list {
+.header-nav-links ul,
+.header-menu .conteiner {
   display: flex;
-  justify-content: space-between;
   gap: 40px;
-  align-items: center;
+  justify-content: space-between;
 }
-.business .conteiner {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-section.business {
+.business.section {
   padding: 188px 0;
 }
-.business-h-one {
-  margin-left: 306px;
-  margin-right: 306px;
-  margin-bottom: 48px;
-}
-section.advantages ul {
+.team-list,
+.advantages-list {
   display: flex;
   gap: 24px;
 }
-.advantages-item {
-  flex-basis: calc((100% - 72px) / 4);
+.team-list li,
+.advantages-list li {
+  width: calc((100% - 72px) / 4);
 }
-section.team ul{
-   display: flex;
-  gap: 24px;
+.team-list li {
+  border-radius: 0 0 4px 4px;
+  padding: 0px 0px 32px 0px;
+  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
+    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+  overflow: hidden;
+}
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 48px;
+  column-gap: 24px;
+}
+.portfolio-list li {
+  width: calc((100% - 48px) / 3);
+  padding-bottom: 32px;
+  border-bottom: 1px solid #e7e9fc;
+}
+.portfolio-list .base-text {
+  display: block;
+  margin-left: 16px;
+}
+.footer {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+footer .logo {
+  padding-top: 0;
+  padding-bottom: 16px;
+}
+.invisible {
+  position: absolute;
+  clip-path: inset(50%);
 }
