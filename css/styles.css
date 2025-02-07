@@ -58,7 +58,6 @@ img {
   letter-spacing: 0.02em;
   color: #2e2f42;
   padding: 24px 0;
-  align-items: center;
 }
 
 .address-header {
@@ -71,7 +70,6 @@ img {
   letter-spacing: 0.02em;
   color: #434455;
   padding: 24px 0;
-  align-items: center;
 }
 .link-header:hover,
 .link-header:focus,
@@ -180,7 +178,7 @@ img {
   padding-top: 120px;
   padding-bottom: 120px;
 }
-.conteiner {
+.container  {
   width: 1158px;
   padding-left: 15px;
   padding-right: 15px;
@@ -189,10 +187,11 @@ img {
 .address-header ul,
 .header-nav-links,
 .header-nav-links ul,
-.header-menu .conteiner {
+.header-menu .container  {
   display: flex;
   gap: 40px;
   justify-content: space-between;
+  align-items: center;
 }
 .business.section {
   padding: 188px 0;
