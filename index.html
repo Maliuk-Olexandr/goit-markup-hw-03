@@ -34,7 +34,7 @@
   <body>
     <!-- #region header -->
     <header class="header-menu">
-      <div class="container ">
+      <div class="container">
         <nav class="header-nav-links">
           <a href="./index.html" class="logo"
             >Web<span class="logo-text">Studio</span></a
@@ -72,7 +72,7 @@
       <!-- #region Order Service with button -->
 
       <section class="section business">
-        <div class="container ">
+        <div class="container">
           <h1 class="business-h-one">Effective Solutions for Your Business</h1>
           <button type="button" class="order-button">Order Service</button>
         </div>
@@ -82,32 +82,32 @@
       <!-- #region descrition -->
 
       <section class="section">
-        <div class="container ">
+        <div class="container">
           <!-- h2 need hiden -->
-          <h2 class="advantages-h-two invisible">our advantages</h2>
+          <h2 class="advantages-h-two visually-hidden">our advantages</h2>
           <ul class="advantages-list">
-            <li>
+            <li class="advantages-item">
               <h3 class="advantages-h-three">Strategy</h3>
               <p class="base-text">
                 Our goal is to identify the business problem to walk away with
                 the perfect and creative solution.
               </p>
             </li>
-            <li>
+            <li class="advantages-item">
               <h3 class="advantages-h-three">Punctuality</h3>
               <p class="base-text">
                 Bring the key message to the brand's audience for the best price
                 within the shortest possible time.
               </p>
             </li>
-            <li>
+            <li class="advantages-item">
               <h3 class="advantages-h-three">Diligence</h3>
               <p class="base-text">
                 Research and confirm brands with the strongest digital growth
                 opportunities and minimize risk.
               </p>
             </li>
-            <li>
+            <li class="advantages-item">
               <h3 class="advantages-h-three">Technologies</h3>
               <p class="base-text">
                 Design practice focused on digital experiences. We bring forth a
@@ -122,7 +122,7 @@
       <!-- #region Our team -->
 
       <section class="section team">
-        <div class="container ">
+        <div class="container">
           <h2 class="base-h-two">Our Team</h2>
           <ul class="team-list">
             <li class="team-card">
@@ -132,8 +132,10 @@
                 width="264"
                 height="260"
               />
-              <h3 class="base-h-three align-text">Mark Guerrero</h3>
-              <p class="base-text align-text">Product Designer</p>
+              <div class="team-card-desc">
+                <h3 class="base-h-three">Mark Guerrero</h3>
+                <p class="base-text">Product Designer</p>
+              </div>
             </li>
             <li class="team-card">
               <img
@@ -142,8 +144,10 @@
                 width="264"
                 height="260"
               />
-              <h3 class="base-h-three align-text">Tom Ford</h3>
-              <p class="base-text align-text">Frontend Developer</p>
+              <div class="team-card-desc">
+                <h3 class="base-h-three">Tom Ford</h3>
+                <p class="base-text">Frontend Developer</p>
+              </div>
             </li>
             <li class="team-card">
               <img
@@ -152,8 +156,10 @@
                 width="264"
                 height="260"
               />
-              <h3 class="base-h-three align-text">Camila Garcia</h3>
-              <p class="base-text align-text">Marketing</p>
+              <div class="team-card-desc">
+                <h3 class="base-h-three">Camila Garcia</h3>
+                <p class="base-text">Marketing</p>
+              </div>
             </li>
             <li class="team-card">
               <img
@@ -162,8 +168,10 @@
                 width="264"
                 height="260"
               />
-              <h3 class="base-h-three align-text">Daniel Wilson</h3>
-              <p class="base-text align-text">UI Designer</p>
+              <div class="team-card-desc">
+                <h3 class="base-h-three">Daniel Wilson</h3>
+                <p class="base-text">UI Designer</p>
+              </div>
             </li>
           </ul>
         </div>
@@ -173,68 +181,80 @@
       <!-- #region Our Portfolio -->
 
       <section class="section">
-        <div class="container ">
+        <div class="container">
           <h2 class="base-h-two">Our Portfolio</h2>
           <ul class="portfolio-list">
-            <li>
+            <li class="portfolio-list-item">
               <img
                 src="./images/img-5.jpg"
                 alt="app for banking"
                 width="360"
                 height="300"
               />
-              <h3 class="base-h-three">Banking App</h3>
-              <p class="base-text">App</p>
+              <div class="portfolio-list-desc">
+                <h3 class="base-h-three">Banking App</h3>
+                <p class="base-text">App</p>
+              </div>
             </li>
-            <li>
+            <li class="portfolio-list-item">
               <img
                 src="./images/img-4.jpg"
                 alt="phone qr code"
                 width="360"
                 height="300"
               />
-              <h3 class="base-h-three">Cashless Payment</h3>
-              <p class="base-text">Marketing</p>
+              <div class="portfolio-list-desc">
+                <h3 class="base-h-three">Cashless Payment</h3>
+                <p class="base-text">Marketing</p>
+              </div>
             </li>
-            <li>
+            <li class="portfolio-list-item">
               <img
                 src="./images/img-3.jpg"
                 alt="notebook and phone"
                 width="360"
                 height="300"
               />
-              <h3 class="base-h-three">Meditation App</h3>
-              <p class="base-text">App</p>
+              <div class="portfolio-list-desc">
+                <h3 class="base-h-three">Meditation App</h3>
+                <p class="base-text">App</p>
+              </div>
             </li>
-            <li>
+            <li class="portfolio-list-item">
               <img
                 src="./images/img-2.jpg"
                 alt="phone and car driver"
                 width="360"
                 height="300"
               />
-              <h3 class="base-h-three">Taxi Service</h3>
-              <p class="base-text">Marketing</p>
+              <div class="portfolio-list-desc">
+                <h3 class="base-h-three">Taxi Service</h3>
+                <p class="base-text">Marketing</p>
+              </div>
             </li>
-            <li>
+            <li class="portfolio-list-item">
               <img
                 src="./images/img-1.jpg"
                 alt="wallpaper for phone"
                 width="360"
                 height="300"
               />
-              <h3 class="base-h-three">Screen Illustrations</h3>
-              <p class="base-text">Design</p>
+              <div class="portfolio-list-desc">
+                <h3 class="base-h-three">Screen Illustrations</h3>
+                <p class="base-text">Design</p>
+              </div>
             </li>
-            <li>
+            <li class="portfolio-list-item">
               <img
                 src="./images/img.jpg"
                 alt="girl with phone"
                 width="360"
                 height="300"
               />
-              <h3 class="base-h-three">Online Courses</h3>
-              <p class="base-text">Marketing</p>
+              <div class="portfolio-list-desc">
+                <h3 class="base-h-three">Online Courses</h3>
+                <p class="base-text">Marketing</p>
+              </div>
             </li>
           </ul>
         </div>
@@ -242,7 +262,7 @@
       <!-- #endregion Our Portfolio -->
     </main>
     <footer class="footer">
-      <div class="container ">
+      <div class="container">
         <a href="./index.html" class="logo"
           >Web<span class="logo-text-footer">Studio</span></a
         >
